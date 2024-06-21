@@ -105,7 +105,7 @@ The provided R script reads the data, transforms it, and generates the plots. Be
        theme_minimal()
      ```
 
-     ![Labor Force Participation by Sex Over Time](./path/to/Screenshot 2024-02-05 at 2.51.20 PM.png)
+     ![Labor Force Participation by Sex Over Time](./R-project/cps1.png)
 
    - **Labor Force Participation of Women with/without Young Children Over Time**
 
@@ -122,7 +122,7 @@ The provided R script reads the data, transforms it, and generates the plots. Be
        theme_minimal()
      ```
 
-     ![Labor Force Participation of Women with/without Young Children Over Time](./path/to/Screenshot 2024-02-05 at 2.54.13 PM.png)
+     ![Labor Force Participation of Women with/without Young Children Over Time](./R-project/cps2.png)
 
    - **Labor Force Participation of Men with/without Young Children Over Time**
 
@@ -139,7 +139,7 @@ The provided R script reads the data, transforms it, and generates the plots. Be
        theme_minimal()
      ```
 
-     ![Labor Force Participation of Men with/without Young Children Over Time](./path/to/Screenshot 2024-02-05 at 2.56.12 PM.png)
+     ![Labor Force Participation of Men with/without Young Children Over Time](./R-project/cps3.png)
 
 ## Conclusion
 
