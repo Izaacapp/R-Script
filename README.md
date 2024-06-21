@@ -1,4 +1,5 @@
 
+
 ```markdown
 # Labor Force Participation Analysis
 
@@ -105,7 +106,7 @@ The provided R script reads the data, transforms it, and generates the plots. Be
        theme_minimal()
      ```
 
-     ![Labor Force Participation by Sex Over Time](./R-project/cps1.png)
+     ![Labor Force Participation by Sex Over Time](cps1.png)
 
    - **Labor Force Participation of Women with/without Young Children Over Time**
 
@@ -122,7 +123,7 @@ The provided R script reads the data, transforms it, and generates the plots. Be
        theme_minimal()
      ```
 
-     ![Labor Force Participation of Women with/without Young Children Over Time](./R-project/cps2.png)
+     ![Labor Force Participation of Women with/without Young Children Over Time](cps2.png)
 
    - **Labor Force Participation of Men with/without Young Children Over Time**
 
@@ -139,7 +140,7 @@ The provided R script reads the data, transforms it, and generates the plots. Be
        theme_minimal()
      ```
 
-     ![Labor Force Participation of Men with/without Young Children Over Time](./R-project/cps3.png)
+     ![Labor Force Participation of Men with/without Young Children Over Time](cps3.png)
 
 ## Conclusion
 
