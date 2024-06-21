@@ -1,6 +1,3 @@
-# R-Script
-
-
 
 ```markdown
 # Labor Force Participation Analysis
@@ -108,6 +105,8 @@ The provided R script reads the data, transforms it, and generates the plots. Be
        theme_minimal()
      ```
 
+     ![Labor Force Participation by Sex Over Time](./path/to/Screenshot 2024-02-05 at 2.51.20 PM.png)
+
    - **Labor Force Participation of Women with/without Young Children Over Time**
 
      ```r
@@ -122,6 +121,8 @@ The provided R script reads the data, transforms it, and generates the plots. Be
             x = "Year", y = "Participation Rate", color = "Has Young Children") +
        theme_minimal()
      ```
+
+     ![Labor Force Participation of Women with/without Young Children Over Time](./path/to/Screenshot 2024-02-05 at 2.54.13 PM.png)
 
    - **Labor Force Participation of Men with/without Young Children Over Time**
 
@@ -138,8 +139,9 @@ The provided R script reads the data, transforms it, and generates the plots. Be
        theme_minimal()
      ```
 
+     ![Labor Force Participation of Men with/without Young Children Over Time](./path/to/Screenshot 2024-02-05 at 2.56.12 PM.png)
+
 ## Conclusion
 
 By following these steps, you can recreate the analysis and generate the plots demonstrating labor force participation trends. Ensure that your dataset is correctly formatted and that all necessary variables are included for accurate analysis.
 ```
-
