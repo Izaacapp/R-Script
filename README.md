@@ -1,15 +1,8 @@
+
+
 ```markdown
-<!-- Improved compatibility of back to top link: See: https://github.com/othneildrew/Best-README-Template/pull/73 -->
 <a name="readme-top"></a>
 
-<!-- PROJECT SHIELDS -->
-<!--
-*** I'm using markdown "reference style" links for readability.
-*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
-*** See the bottom of this document for the declaration of the reference variables
-*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
-*** https://www.markdownguide.org/basic-syntax/#reference-style-links
--->
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
@@ -17,42 +10,34 @@
 [![MIT License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
-<!-- PROJECT LOGO -->
 <br />
 <div align="center">
+  <a href="https://github.com/izaacap/labor-force-participation-analysis">
+    <img src="images/logo.png" alt="Logo" width="80" height="80">
+  </a>
+
   <h3 align="center">Labor Force Participation Analysis</h3>
 
   <p align="center">
-    An analysis of labor force participation trends using data from the Integrated Public Use Microdata Series (IPUMS).
+    Analyzing labor force participation trends using IPUMS data
     <br />
-    <a href="https://github.com/Izaacapp/R-Script"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/izaacap/labor-force-participation-analysis"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/Izaacapp/R-Script">View Demo</a>
+    <a href="https://github.com/izaacap/labor-force-participation-analysis">View Demo</a>
     ·
-    <a href="https://github.com/Izaacapp/R-Script/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
+    <a href="https://github.com/izaacap/labor-force-participation-analysis/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
     ·
-    <a href="https://github.com/Izaacapp/R-Script/issues/new?labels=enhancement&template=feature-request---.md">Request Feature</a>
+    <a href="https://github.com/izaacap/labor-force-participation-analysis/issues/new?labels=enhancement&template=feature-request---.md">Request Feature</a>
   </p>
 </div>
 
-<!-- TABLE OF CONTENTS -->
 <details>
   <summary>Table of Contents</summary>
   <ol>
-    <li>
-      <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
-    </li>
+    <li><a href="#about-the-project">About The Project</a></li>
+    <li><a href="#built-with">Built With</a></li>
+    <li><a href="#getting-started">Getting Started</a></li>
     <li><a href="#usage">Usage</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
@@ -62,41 +47,31 @@
   </ol>
 </details>
 
-<!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Labor Force Participation by Sex Over Time](cps1.png)](https://github.com/Izaacapp/R-Script)
+[![Product Name Screen Shot][product-screenshot]](https://example.com)
 
 This project analyzes labor force participation trends using data from the Integrated Public Use Microdata Series (IPUMS). The analysis includes labor force participation rates by sex over time, and participation rates of women and men with and without young children.
-
-Here's why this project is useful:
-* Understand labor force participation trends
-* Analyze differences by sex and presence of young children
-* Utilize data from a reliable source for accurate analysis
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Built With
 
-* [R](https://www.r-project.org/)
-* [dplyr](https://cran.r-project.org/web/packages/dplyr/index.html)
-* [ggplot2](https://cran.r-project.org/web/packages/ggplot2/index.html)
-* [readr](https://cran.r-project.org/web/packages/readr/index.html)
+* [![R][R]][R-url]
+* [![dplyr][dplyr]][dplyr-url]
+* [![ggplot2][ggplot2]][ggplot2-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- GETTING STARTED -->
 ## Getting Started
-
-To get a local copy up and running follow these simple steps.
 
 ### Prerequisites
 
 Ensure that you have R installed on your system. You'll also need the following R packages:
 
-* `dplyr`
-* `ggplot2`
-* `readr`
+- `dplyr`
+- `ggplot2`
+- `readr`
 
 You can install these packages using the following commands:
 
@@ -108,17 +83,15 @@ install.packages("readr")
 
 ### Installation
 
-1. Clone the repo
-   ```sh
-   git clone https://github.com/Izaacapp/R-Script.git
-   ```
-2. Download the dataset from IPUMS and place it in a known directory.
-3. Update the file path in the R script to point to the location of the downloaded file.
+1. Download the dataset from IPUMS and place it in a known directory.
+2. Update the file path in the R script to point to the location of the downloaded file.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+### Data Preparation
 
-<!-- USAGE EXAMPLES -->
-## Usage
+1. Download the dataset from [IPUMS Current Population Survey (CPS)](https://cps.ipums.org/cps-action/data_requests/download) and place it in a known directory.
+2. Update the file path in the R script to point to the location of the downloaded file.
+
+### Running the Script
 
 The provided R script reads the data, transforms it, and generates the plots. Below is a breakdown of the steps in the script:
 
@@ -148,7 +121,7 @@ The provided R script reads the data, transforms it, and generates the plots. Be
    )
 
    # Set the file path to the .dat.gz file
-   file_path <- "/Users/beck/GitHub/myRepos/R-Script/cps_00002 2.dat.gz"
+   file_path <- "/path/to/your/dataset/cps_00002 2.dat.gz"
 
    # Normalize the file path to handle spaces or special characters
    file_path_normalized <- normalizePath(file_path, mustWork = TRUE)
@@ -192,7 +165,7 @@ The provided R script reads the data, transforms it, and generates the plots. Be
        theme_minimal()
      ```
 
-     ![Labor Force Participation by Sex Over Time](https://github.com/Izaacapp/R-Script/blob/main/cps1.png)
+     ![Labor Force Participation by Sex Over Time](cps1.png)
 
    - **Labor Force Participation of Women with/without Young Children Over Time**
 
@@ -209,7 +182,7 @@ The provided R script reads the data, transforms it, and generates the plots. Be
        theme_minimal()
      ```
 
-     ![Labor Force Participation of Women with/without Young Children Over Time](https://github.com/Izaacapp/R-Script/blob/main/cps2.png)
+     ![Labor Force Participation of Women with/without Young Children Over Time](cps2.png)
 
    - **Labor Force Participation of Men with/without Young Children Over Time**
 
@@ -219,36 +192,28 @@ The provided R script reads the data, transforms it, and generates the plots. Be
        group_by(year, has_young_children) %>%
        summarize(lfp_rate = weighted.mean(in_labor_force, asecwt, na.rm = TRUE), .groups = 'drop')
 
-     ggplot(part
-
-icipation_men_children, aes(x = year, y = lfp_rate, color = factor(has_young_children))) +
+     ggplot(participation_men_children, aes(x = year, y = lfp_rate, color = factor(has_young_children))) +
        geom_line() +
        labs(title = "Labor Force Participation of Men with/without Young Children",
             x = "Year", y = "Participation Rate", color = "Has Young Children") +
        theme_minimal()
      ```
 
-     ![Labor Force Participation of Men with/without Young Children Over Time](https://github.com/Izaacapp/R-Script/blob/main/cps3.png)
+     ![Labor Force Participation of Men with/without Young Children Over Time](cps3.png)
+
+## Conclusion
+
+By following these steps, you can recreate the analysis and generate the plots demonstrating labor force participation trends. Ensure that your dataset is correctly formatted and that all necessary variables are included for accurate analysis.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- ROADMAP -->
-## Roadmap
-
-- [ ] Add additional analysis
-- [ ] Improve data visualization
-- [ ] Add support for more datasets
-
-See the [open issues](https://github.com/Izaacapp/R-Script/issues) for a full list of proposed features (and known issues).
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- CONTRIBUTING -->
 ## Contributing
 
 Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
+If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag
+
+ "enhancement".
 Don't forget to give the project a star! Thanks again!
 
 1. Fork the Project
@@ -259,50 +224,46 @@ Don't forget to give the project a star! Thanks again!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- LICENSE -->
 ## License
 
 Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- CONTACT -->
 ## Contact
 
-Izaac Plambeck - [@Izaacapp](https://x.com/Izaacapp) - email@example.com
+Izaac Plambeck - [@Izaacapp](https://x.com/Izaacapp) - izaacap@gmail.com
 
-Project Link: [https://github.com/Izaacapp/R-Script](https://github.com/Izaacapp/R-Script)
+Project Link: [https://github.com/izaacap/labor-force-participation-analysis](https://github.com/izaacap/labor-force-participation-analysis)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
 * [IPUMS](https://ipums.org)
-* [R Documentation](https://www.rdocumentation.org/)
-* [ggplot2 Documentation](https://ggplot2.tidyverse.org/)
-* [dplyr Documentation](https://dplyr.tidyverse.org/)
-* [readr Documentation](https://readr.tidyverse.org/)
-* [Choose an Open Source License](https://choosealicense.com)
-* [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
-* [Img Shields](https://shields.io)
-* [GitHub Pages](https://pages.github.com)
-* [Font Awesome](https://fontawesome.com)
-* [React Icons](https://react-icons.github.io/react-icons/search)
+* [RStudio](https://rstudio.com)
+* [Tidyverse](https://www.tidyverse.org)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/Izaacapp/R-Script.svg?style=for-the-badge
-[contributors-url]: https://github.com/Izaacapp/R-Script/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/Izaacapp/R-Script.svg?style=for-the-badge
-[forks-url]: https://github.com/Izaacapp/R-Script/network/members
-[stars-shield]: https://img.shields.io/github/stars/Izaacapp/R-Script.svg?style=for-the-badge
-[stars-url]: https://github.com/Izaacapp/R-Script/stargazers
-[issues-shield]: https://img.shields.io/github/issues/Izaacapp/R-Script.svg?style=for-the-badge
-[issues-url]: https://github.com/Izaacapp/R-Script/issues
-[license-shield]: https://img.shields.io/github/license/Izaacapp/R-Script.svg?style=for-the-badge
-[license-url]: https://github.com/Izaacapp/R-Script/blob/master/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/izaacap/labor-force-participation-analysis.svg?style=for-the-badge
+[contributors-url]: https://github.com/izaacap/labor-force-participation-analysis/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/izaacap/labor-force-participation-analysis.svg?style=for-the-badge
+[forks-url]: https://github.com/izaacap/labor-force-participation-analysis/network/members
+[stars-shield]: https://img.shields.io/github/stars/izaacap/labor-force-participation-analysis.svg?style=for-the-badge
+[stars-url]: https://github.com/izaacap/labor-force-participation-analysis/stargazers
+[issues-shield]: https://img.shields.io/github/issues/izaacap/labor-force-participation-analysis.svg?style=for-the-badge
+[issues-url]: https://github.com/izaacap/labor-force-participation-analysis/issues
+[license-shield]: https://img.shields.io/github/license/izaacap/labor-force-participation-analysis.svg?style=for-the-badge
+[license-url]: https://github.com/izaacap/labor-force-participation-analysis/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/izaac-plambeck
+[linkedin-url]: https://www.linkedin.com/in/izaac-plambeck/
+[product-screenshot]: images/screenshot.png
+[R]: https://img.shields.io/badge/R-276DC3?style=for-the-badge&logo=r&logoColor=white
+[R-url]: https://www.r-project.org/
+[dplyr]: https://img.shields.io/badge/dplyr-276DC3?style=for-the-badge&logo=r&logoColor=white
+[dplyr-url]: https://dplyr.tidyverse.org/
+[ggplot2]: https://img.shields.io/badge/ggplot2-276DC3?style=for-the-badge&logo=r&logoColor=white
+[ggplot2-url]: https://ggplot2.tidyverse.org/
+```
