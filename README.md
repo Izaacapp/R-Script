@@ -145,4 +145,4 @@ The provided R script reads the data, transforms it, and generates the plots. Be
 ## Conclusion
 
 By following these steps, you can recreate the analysis and generate the plots demonstrating labor force participation trends. Ensure that your dataset is correctly formatted and that all necessary variables are included for accurate analysis.
-```
+
