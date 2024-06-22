@@ -10,7 +10,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/Izaacapp/R-Script">
-    <img src="/Users/beck/GitHub/myRepos/R-Script/datasci.png" alt="Logo" width="80" height="80">
+    <img src="datasci.png" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">Labor Force Participation Analysis</h3>
