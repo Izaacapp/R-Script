@@ -209,10 +209,10 @@ Distributed under the MIT License. See `MIT-LICENSE.txt` for more information.
 ## Contact
 
 Izaac Plambeck 
-- (https://x.com/Izaacapp)
- - izaacap@gmail.com
+- https://x.com/Izaacapp (Twitter)
+ - izaacap@gmail.com (Email)
 
-Project Link: [https://github.com/Izaacapp/R-Script](https://github.com/Izaacapp/R-Script)
+
 
 ## Acknowledgments
 
