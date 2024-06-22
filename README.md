@@ -1,3 +1,4 @@
+
 <a name="readme-top"></a>
 
 [![Contributors][contributors-shield]][contributors-url]
@@ -44,11 +45,7 @@
 
 ## About The Project
 
-
-
 This project analyzes labor force participation trends using data from the Integrated Public Use Microdata Series (IPUMS). The analysis includes labor force participation rates by sex over time, and participation rates of women and men with and without young children.
-
-
 
 ### Built With
 
@@ -56,25 +53,23 @@ This project analyzes labor force participation trends using data from the Integ
 * [![dplyr][dplyr]][dplyr-url]
 * [![ggplot2][ggplot2]][ggplot2-url]
 
-
-
 ## Getting Started
 
 ### Prerequisites
 
 Ensure that you have R installed on your system. You'll also need the following R packages:
 
-- dplyr
-- ggplot2
-- readr
+- `dplyr`
+- `ggplot2`
+- `readr`
 
 You can install these packages using the following commands:
 
-r
+```r
 install.packages("dplyr")
 install.packages("ggplot2")
 install.packages("readr")
-
+```
 
 ### Installation
 
@@ -92,8 +87,7 @@ The provided R script reads the data, transforms it, and generates the plots. Be
 
 1. **Install and Load Necessary Libraries**
 
-   
-r
+   ```r
    # Install required packages if not already installed
    install.packages("dplyr")
    install.packages("ggplot2")
@@ -103,14 +97,13 @@ r
    library(dplyr)
    library(ggplot2)
    library(readr)
-
+   ```
 
 2. **Define Column Widths and Read Data**
 
    Define the column widths and names for the fixed-width file, and read in the data:
 
-   
-r
+   ```r
    # Define the widths and column names for the fixed-width file
    widths <- fwf_widths(
      c(4, 11, 2, 1, 1, 1),
@@ -125,14 +118,13 @@ r
 
    # Read the data using the normalized path
    data <- read_fwf(gzfile(file_path_normalized), widths)
-
+   ```
 
 3. **Transform the Data**
 
    Mutate the data to ensure all variables are in the correct format and create new variables needed for the analysis:
 
-   
-r
+   ```r
    data <- data %>%
      mutate(
        year = as.integer(year),
@@ -145,14 +137,13 @@ r
        has_young_children = if_else(nchlt5 >= 1, 1, 0)
      ) %>%
      filter(age >= 20 & age <= 50, labforce != 0)
-
+   ```
 
 4. **Generate Plots**
 
    - **Labor Force Participation by Sex Over Time**
 
-     
-r
+     ```r
      participation_by_sex_year <- data %>%
        group_by(year, sex) %>%
        summarize(lfp_rate = weighted.mean(in_labor_force, asecwt, na.rm = TRUE), .groups = 'drop')
@@ -162,14 +153,13 @@ r
        labs(title = "Labor Force Participation by Sex Over Time",
             x = "Year", y = "Participation Rate") +
        theme_minimal()
-
+     ```
 
      ![Labor Force Participation by Sex Over Time](cps1.png)
 
    - **Labor Force Participation of Women with/without Young Children Over Time**
 
-     
-r
+     ```r
      participation_women_children <- data %>%
        filter(sex == "Female") %>%
        group_by(year, has_young_children) %>%
@@ -180,14 +170,13 @@ r
        labs(title = "Labor Force Participation of Women with/without Young Children",
             x = "Year", y = "Participation Rate", color = "Has Young Children") +
        theme_minimal()
-
+     ```
 
      ![Labor Force Participation of Women with/without Young Children Over Time](cps2.png)
 
    - **Labor Force Participation of Men with/without Young Children Over Time**
 
-     
-r
+     ```r
      participation_men_children <- data %>%
        filter(sex == "Male") %>%
        group_by(year, has_young_children) %>%
@@ -198,7 +187,7 @@ r
        labs(title = "Labor Force Participation of Men with/without Young Children",
             x = "Year", y = "Participation Rate", color = "Has Young Children") +
        theme_minimal()
-
+     ```
 
      ![Labor Force Participation of Men with/without Young Children Over Time](cps3.png)
 
@@ -206,38 +195,31 @@ r
 
 By following these steps, you can recreate the analysis and generate the plots demonstrating labor force participation trends. Ensure that your dataset is correctly formatted and that all necessary variables are included for accurate analysis.
 
-
 ## Contributing
 
 "Every great advance in science has issued from a new audacity of imagination." - Niels Bohr
 
 Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You
-
- can also simply open an issue with the tag "enhancement".
-Don't forget to give the project a star! Thanks again!
+If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement". Don't forget to give the project a star! Thanks again!
 
 1. Fork the Project
-2. Create your Feature Branch (git checkout -b feature/AmazingFeature)
-3. Commit your Changes (git commit -m 'Add some AmazingFeature')
-4. Push to the Branch (git push origin feature/AmazingFeature)
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
-
 
 ## License
 
-Distributed under the MIT License. See LICENSE.txt for more information.
-
-
-
+Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 ## Contact
 
 Izaac Plambeck - [@Izaacapp](https://x.com/Izaacapp) - izaacap@gmail.com
 
-Project Link: [https://github.com/Izaacapp/R-Script](https://github.com/Izaacapp/R-Script)
+Project
 
+ Link: [https://github.com/Izaacapp/R-Script](https://github.com/Izaacapp/R-Script)
 
 ## Acknowledgments
 
@@ -267,3 +249,5 @@ Project Link: [https://github.com/Izaacapp/R-Script](https://github.com/Izaacapp
 [dplyr-url]: https://dplyr.tidyverse.org/
 [ggplot2]: https://img.shields.io/badge/ggplot2-276DC3?style=for-the-badge&logo=r&logoColor=white
 [ggplot2-url]: https://ggplot2.tidyverse.org/
+
+
