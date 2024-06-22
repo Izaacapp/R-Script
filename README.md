@@ -1,13 +1,14 @@
+I see, you want to customize the colors of the badges using Shields.io parameters. Let's update the `README.md` accordingly:
 
+```markdown
 <a name="readme-top"></a>
 
 <div align="center">
-
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
+  [![Contributors][contributors-shield]][contributors-url]
+  [![Forks][forks-shield]][forks-url]
+  [![Stargazers][stars-shield]][stars-url]
+  [![Issues][issues-shield]][issues-url]
+  [![LinkedIn][linkedin-shield]][linkedin-url]
 </div>
 
 <br />
@@ -37,6 +38,8 @@
     <li><a href="#about-the-project">About The Project</a></li>
     <li><a href="#built-with">Built With</a></li>
     <li><a href="#getting-started">Getting Started</a></li>
+    <li><a href="#usage">Usage</a></li>
+    <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
@@ -216,11 +219,11 @@ Distributed under the MIT License. See `MIT-LICENSE.txt` for more information.
 
 ## Contact
 
-Izaac Plambeck - [@Izaacapp](https://x.com/Izaacapp) - izaacap@gmail.com
+Izaac Plambeck - [@Izaacapp](https://x.com/Izaacapp) -
 
-Project
+ izaacap@gmail.com
 
- Link: [https://github.com/Izaacapp/R-Script](https://github.com/Izaacapp/R-Script)
+Project Link: [https://github.com/Izaacapp/R-Script](https://github.com/Izaacapp/R-Script)
 
 ## Acknowledgments
 
@@ -231,23 +234,24 @@ Project
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- MARKDOWN LINKS & IMAGES -->
-[contributors-shield]: https://img.shields.io/github/contributors/Izaacapp/R-Script.svg?style=for-the-badge
+[contributors-shield]: https://img.shields.io/badge/Contributors-Violet?style=for-the-badge
 [contributors-url]: https://github.com/Izaacapp/R-Script/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/Izaacapp/R-Script.svg?style=for-the-badge
+[forks-shield]: https://img.shields.io/badge/Forks-Green?style=for-the-badge
 [forks-url]: https://github.com/Izaacapp/R-Script/network/members
-[stars-shield]: https://img.shields.io/github/stars/Izaacapp/R-Script.svg?style=for-the-badge
+[stars-shield]: https://img.shields.io/badge/Stars-Gold?style=for-the-badge
 [stars-url]: https://github.com/Izaacapp/R-Script/stargazers
-[issues-shield]: https://img.shields.io/github/issues/Izaacapp/R-Script.svg?style=for-the-badge
+[issues-shield]: https://img.shields.io/badge/Issues-BloodRed?style=for-the-badge
 [issues-url]: https://github.com/Izaacapp/R-Script/issues
 [license-shield]: https://img.shields.io/github/license/Izaacapp/R-Script.svg?style=for-the-badge
 [license-url]: https://github.com/Izaacapp/R-Script/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/izaac-plambeck/
-[product-screenshot]: images/screenshot.png
 [R]: https://img.shields.io/badge/R-276DC3?style=for-the-badge&logo=r&logoColor=white
 [R-url]: https://www.r-project.org/
 [dplyr]: https://img.shields.io/badge/dplyr-276DC3?style=for-the-badge&logo=r&logoColor=white
 [dplyr-url]: https://dplyr.tidyverse.org/
 [ggplot2]: https://img.shields.io/badge/ggplot2-276DC3?style=for-the-badge&logo=r&logoColor=white
 [ggplot2-url]: https://ggplot2.tidyverse.org/
+```
 
+This should update the badges with the desired colors. Let me know if you need any further adjustments!
