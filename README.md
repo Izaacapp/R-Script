@@ -1,9 +1,8 @@
-I see, you want to customize the colors of the badges using Shields.io parameters. Let's update the `README.md` accordingly:
 
-```markdown
 <a name="readme-top"></a>
 
 <div align="center">
+  
   [![Contributors][contributors-shield]][contributors-url]
   [![Forks][forks-shield]][forks-url]
   [![Stargazers][stars-shield]][stars-url]
@@ -252,6 +251,3 @@ Project Link: [https://github.com/Izaacapp/R-Script](https://github.com/Izaacapp
 [dplyr-url]: https://dplyr.tidyverse.org/
 [ggplot2]: https://img.shields.io/badge/ggplot2-276DC3?style=for-the-badge&logo=r&logoColor=white
 [ggplot2-url]: https://ggplot2.tidyverse.org/
-```
-
-This should update the badges with the desired colors. Let me know if you need any further adjustments!
