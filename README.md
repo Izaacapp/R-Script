@@ -218,9 +218,9 @@ Distributed under the MIT License. See `MIT-LICENSE.txt` for more information.
 
 ## Contact
 
-Izaac Plambeck - [@Izaacapp](https://x.com/Izaacapp) -
+Izaac Plambeck - [@Izaacapp](https://x.com/Izaac
 
- izaacap@gmail.com
+app) - izaacap@gmail.com
 
 Project Link: [https://github.com/Izaacapp/R-Script](https://github.com/Izaacapp/R-Script)
 
@@ -233,13 +233,13 @@ Project Link: [https://github.com/Izaacapp/R-Script](https://github.com/Izaacapp
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- MARKDOWN LINKS & IMAGES -->
-[contributors-shield]: https://img.shields.io/badge/Contributors-Violet?style=for-the-badge
+[contributors-shield]: https://img.shields.io/badge/Contributors-violet?style=for-the-badge
 [contributors-url]: https://github.com/Izaacapp/R-Script/graphs/contributors
-[forks-shield]: https://img.shields.io/badge/Forks-Green?style=for-the-badge
+[forks-shield]: https://img.shields.io/badge/Forks-green?style=for-the-badge
 [forks-url]: https://github.com/Izaacapp/R-Script/network/members
-[stars-shield]: https://img.shields.io/badge/Stars-Gold?style=for-the-badge
+[stars-shield]: https://img.shields.io/badge/Stars-gold?style=for-the-badge
 [stars-url]: https://github.com/Izaacapp/R-Script/stargazers
-[issues-shield]: https://img.shields.io/badge/Issues-BloodRed?style=for-the-badge
+[issues-shield]: https://img.shields.io/badge/Issues-red?style=for-the-badge
 [issues-url]: https://github.com/Izaacapp/R-Script/issues
 [license-shield]: https://img.shields.io/github/license/Izaacapp/R-Script.svg?style=for-the-badge
 [license-url]: https://github.com/Izaacapp/R-Script/blob/master/LICENSE.txt
