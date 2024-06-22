@@ -1,8 +1,3 @@
-New chat detected.. initialising new project mode 🥷👾💻
-
-Here's your updated `README.md` with the specified changes:
-
-```markdown
 <a name="readme-top"></a>
 
 [![Contributors][contributors-shield]][contributors-url]
@@ -15,7 +10,7 @@ Here's your updated `README.md` with the specified changes:
 <br />
 <div align="center">
   <a href="https://github.com/Izaacapp/R-Script">
-    <img src="datasci.png" alt="Logo" width="80" height="80">
+    <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">Labor Force Participation Analysis</h3>
@@ -25,6 +20,12 @@ Here's your updated `README.md` with the specified changes:
     <br />
     <a href="https://github.com/Izaacapp/R-Script"><strong>Explore the docs »</strong></a>
     <br />
+    <br />
+    <a href="https://github.com/Izaacapp/R-Script">View Demo</a>
+    ·
+    <a href="https://github.com/Izaacapp/R-Script/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
+    ·
+    <a href="https://github.com/Izaacapp/R-Script/issues/new?labels=enhancement&template=feature-request---.md">Request Feature</a>
   </p>
 </div>
 
@@ -45,7 +46,11 @@ Here's your updated `README.md` with the specified changes:
 
 ## About The Project
 
+[![Product Name Screen Shot][product-screenshot]](https://example.com)
+
 This project analyzes labor force participation trends using data from the Integrated Public Use Microdata Series (IPUMS). The analysis includes labor force participation rates by sex over time, and participation rates of women and men with and without young children.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Built With
 
@@ -53,17 +58,25 @@ This project analyzes labor force participation trends using data from the Integ
 * [![dplyr][dplyr]][dplyr-url]
 * [![ggplot2][ggplot2]][ggplot2-url]
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 ## Getting Started
 
 ### Prerequisites
 
 Ensure that you have R installed on your system. You'll also need the following R packages:
 
-```r
+- dplyr
+- ggplot2
+- readr
+
+You can install these packages using the following commands:
+
+r
 install.packages("dplyr")
 install.packages("ggplot2")
 install.packages("readr")
-```
+
 
 ### Installation
 
@@ -81,7 +94,8 @@ The provided R script reads the data, transforms it, and generates the plots. Be
 
 1. **Install and Load Necessary Libraries**
 
-   ```r
+   
+r
    # Install required packages if not already installed
    install.packages("dplyr")
    install.packages("ggplot2")
@@ -91,13 +105,14 @@ The provided R script reads the data, transforms it, and generates the plots. Be
    library(dplyr)
    library(ggplot2)
    library(readr)
-   ```
+
 
 2. **Define Column Widths and Read Data**
 
    Define the column widths and names for the fixed-width file, and read in the data:
 
-   ```r
+   
+r
    # Define the widths and column names for the fixed-width file
    widths <- fwf_widths(
      c(4, 11, 2, 1, 1, 1),
@@ -112,13 +127,14 @@ The provided R script reads the data, transforms it, and generates the plots. Be
 
    # Read the data using the normalized path
    data <- read_fwf(gzfile(file_path_normalized), widths)
-   ```
+
 
 3. **Transform the Data**
 
    Mutate the data to ensure all variables are in the correct format and create new variables needed for the analysis:
 
-   ```r
+   
+r
    data <- data %>%
      mutate(
        year = as.integer(year),
@@ -131,13 +147,14 @@ The provided R script reads the data, transforms it, and generates the plots. Be
        has_young_children = if_else(nchlt5 >= 1, 1, 0)
      ) %>%
      filter(age >= 20 & age <= 50, labforce != 0)
-   ```
+
 
 4. **Generate Plots**
 
    - **Labor Force Participation by Sex Over Time**
 
-     ```r
+     
+r
      participation_by_sex_year <- data %>%
        group_by(year, sex) %>%
        summarize(lfp_rate = weighted.mean(in_labor_force, asecwt, na.rm = TRUE), .groups = 'drop')
@@ -147,13 +164,14 @@ The provided R script reads the data, transforms it, and generates the plots. Be
        labs(title = "Labor Force Participation by Sex Over Time",
             x = "Year", y = "Participation Rate") +
        theme_minimal()
-     ```
+
 
      ![Labor Force Participation by Sex Over Time](cps1.png)
 
    - **Labor Force Participation of Women with/without Young Children Over Time**
 
-     ```r
+     
+r
      participation_women_children <- data %>%
        filter(sex == "Female") %>%
        group_by(year, has_young_children) %>%
@@ -164,13 +182,14 @@ The provided R script reads the data, transforms it, and generates the plots. Be
        labs(title = "Labor Force Participation of Women with/without Young Children",
             x = "Year", y = "Participation Rate", color = "Has Young Children") +
        theme_minimal()
-     ```
+
 
      ![Labor Force Participation of Women with/without Young Children Over Time](cps2.png)
 
    - **Labor Force Participation of Men with/without Young Children Over Time**
 
-     ```r
+     
+r
      participation_men_children <- data %>%
        filter(sex == "Male") %>%
        group_by(year, has_young_children) %>%
@@ -181,7 +200,7 @@ The provided R script reads the data, transforms it, and generates the plots. Be
        labs(title = "Labor Force Participation of Men with/without Young Children",
             x = "Year", y = "Participation Rate", color = "Has Young Children") +
        theme_minimal()
-     ```
+
 
      ![Labor Force Participation of Men with/without Young Children Over Time](cps3.png)
 
@@ -189,29 +208,40 @@ The provided R script reads the data, transforms it, and generates the plots. Be
 
 By following these steps, you can recreate the analysis and generate the plots demonstrating labor force participation trends. Ensure that your dataset is correctly formatted and that all necessary variables are included for accurate analysis.
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 ## Contributing
 
 "Every great advance in science has issued from a new audacity of imagination." - Niels Bohr
 
 Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement". Don't forget to give the project a star! Thanks again!
+If you have a suggestion that would make this better, please fork the repo and create a pull request. You
+
+ can also simply open an issue with the tag "enhancement".
+Don't forget to give the project a star! Thanks again!
 
 1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
+2. Create your Feature Branch (git checkout -b feature/AmazingFeature)
+3. Commit your Changes (git commit -m 'Add some AmazingFeature')
+4. Push to the Branch (git push origin feature/AmazingFeature)
 5. Open a Pull Request
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## License
 
-Distributed under the MIT License. See `LICENSE.txt` for more information.
+Distributed under the MIT License. See LICENSE.txt for more information.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Contact
 
 Izaac Plambeck - [@Izaacapp](https://x.com/Izaacapp) - izaacap@gmail.com
 
 Project Link: [https://github.com/Izaacapp/R-Script](https://github.com/Izaacapp/R-Script)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Acknowledgments
 
@@ -222,9 +252,7 @@ Project Link: [https://github.com/Izaacapp/R-Script](https://github.com/Izaacapp
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- MARKDOWN LINKS & IMAGES -->
-[contributors-shield
-
-]: https://img.shields.io/github/contributors/Izaacapp/R-Script.svg?style=for-the-badge
+[contributors-shield]: https://img.shields.io/github/contributors/Izaacapp/R-Script.svg?style=for-the-badge
 [contributors-url]: https://github.com/Izaacapp/R-Script/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/Izaacapp/R-Script.svg?style=for-the-badge
 [forks-url]: https://github.com/Izaacapp/R-Script/network/members
@@ -243,6 +271,3 @@ Project Link: [https://github.com/Izaacapp/R-Script](https://github.com/Izaacapp
 [dplyr-url]: https://dplyr.tidyverse.org/
 [ggplot2]: https://img.shields.io/badge/ggplot2-276DC3?style=for-the-badge&logo=r&logoColor=white
 [ggplot2-url]: https://ggplot2.tidyverse.org/
-```
-
-This updated README includes the specified changes. Let me know if you need any further modifications or enhancements!
