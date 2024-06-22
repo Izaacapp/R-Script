@@ -1,4 +1,4 @@
-```markdown
+
 <a name="readme-top"></a>
 
 [![Contributors][contributors-shield]][contributors-url]
@@ -211,10 +211,10 @@ By following these steps, you can recreate the analysis and generate the plots d
 
 Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
-Don't forget to give the
+If you have a suggestion that would make this better, please fork the repo and create a pull request. You
 
- project a star! Thanks again!
+ can also simply open an issue with the tag "enhancement".
+Don't forget to give the project a star! Thanks again!
 
 1. Fork the Project
 2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
@@ -266,4 +266,3 @@ Project Link: [https://github.com/Izaacapp/R-Script](https://github.com/Izaacapp
 [dplyr-url]: https://dplyr.tidyverse.org/
 [ggplot2]: https://img.shields.io/badge/ggplot2-276DC3?style=for-the-badge&logo=r&logoColor=white
 [ggplot2-url]: https://ggplot2.tidyverse.org/
-```
