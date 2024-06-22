@@ -208,10 +208,9 @@ Distributed under the MIT License. See `MIT-LICENSE.txt` for more information.
 
 ## Contact
 
-Izaac Plambeck 
-(Twitter) - https://x.com/Izaacapp 
-(Email) - izaacap@gmail.com 
-
+Izaac Plambeck  
+[Tweet me](https://x.com/Izaacapp)  
+[Email me](mailto:izaacap@gmail.com)  
 
 
 ## Acknowledgments
