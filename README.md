@@ -50,7 +50,7 @@
 
 This project analyzes labor force participation trends using data from the Integrated Public Use Microdata Series (IPUMS). The analysis includes labor force participation rates by sex over time, and participation rates of women and men with and without young children.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 
 ### Built With
 
@@ -58,7 +58,7 @@ This project analyzes labor force participation trends using data from the Integ
 * [![dplyr][dplyr]][dplyr-url]
 * [![ggplot2][ggplot2]][ggplot2-url]
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 
 ## Getting Started
 
@@ -208,7 +208,6 @@ r
 
 By following these steps, you can recreate the analysis and generate the plots demonstrating labor force participation trends. Ensure that your dataset is correctly formatted and that all necessary variables are included for accurate analysis.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Contributing
 
@@ -227,13 +226,11 @@ Don't forget to give the project a star! Thanks again!
 4. Push to the Branch (git push origin feature/AmazingFeature)
 5. Open a Pull Request
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## License
 
 Distributed under the MIT License. See LICENSE.txt for more information.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Contact
 
@@ -241,7 +238,6 @@ Izaac Plambeck - [@Izaacapp](https://x.com/Izaacapp) - izaacap@gmail.com
 
 Project Link: [https://github.com/Izaacapp/R-Script](https://github.com/Izaacapp/R-Script)
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Acknowledgments
 
