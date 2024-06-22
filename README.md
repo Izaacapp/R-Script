@@ -21,7 +21,6 @@
     <a href="https://github.com/Izaacapp/R-Script"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/Izaacapp/R-Script">View Demo</a>
     ·
     <a href="https://github.com/Izaacapp/R-Script/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
     ·
